@@ -1,0 +1,74 @@
+.products-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.products-container li {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+}
+
+.card {
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 5px 5px 10px #ccc;
+}
+.card img {
+  height: 60%;
+  width: 100%;
+}
+.card h2 {
+  place-self: start;
+  font-size: 1.3em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.card > p {
+  place-self: start;
+  font-size: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.card:hover {
+  box-shadow: 10px 10px 20px #ccc;
+}
+
+button {
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: auto;
+  padding: 10px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  background-color: rgba(21, 26, 42, 0.787);
+}
+button:hover {
+  background-color: rgba(21, 26, 42, 0.9);
+}
+
+.orderBtn {
+  margin-top: 0;
+  width: 200px;
+  background: orangered;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+.orderBtn:hover {
+  background: rgb(89, 0, 190);
+}

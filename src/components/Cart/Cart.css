@@ -1,0 +1,147 @@
+ul {
+  list-style-type: none;
+}
+li {
+  padding: 0 10px;
+}
+.cartIcon {
+  padding: 1.2em;
+  position: relative;
+  cursor: pointer;
+}
+.cartCounter {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  font-size: 0.8em;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 1em;
+  height: 1em;
+  padding: 0.3em;
+  background-color: orangered;
+  color: white;
+  z-index: 1;
+}
+
+.cartSlider {
+  position: absolute;
+  right: 0;
+  width: 25%;
+  z-index: 100;
+  background-color: white;
+  box-shadow: 0px 10px 20px #ccc;
+  border: 1px solid #ccc;
+}
+
+.cartSlider .cart-titleBar h2 {
+  font-size: 1.2em;
+}
+
+.cartSlider .cart-titleBar h3 {
+  font-size: 1em;
+}
+
+.cartSlider .cartItemImage {
+  width: 30%;
+}
+
+.cartSlider .cartItem .cartItemDetails {
+  gap: 0;
+}
+
+.cartSlider .cartItemRemove {
+  background-color: transparent;
+  color: darkred;
+}
+
+.cartSlider .cart-container {
+  border: none;
+  margin: 1em;
+  padding: 0.3em;
+  height: 25em;
+  overflow-x: hidden;
+}
+
+.cart-container {
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 1.25em;
+  padding: 0.6em;
+  height: 100%;
+  background-color: white;
+}
+
+.cart-titleBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.cart-empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-grow: 1;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.cartItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-top: 1px dotted black;
+}
+.cartItemCard {
+  display: flex;
+  height: inherit;
+  gap: 2em;
+  align-items: center;
+}
+.cartItemImage {
+  width: 18%;
+}
+.cartItemImage img {
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+}
+.cartItemDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.cartItemName {
+  font-size: 1em;
+  font-weight: bold;
+}
+.cartItemQuantity {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.cartItemQuantity div {
+  padding: 0.5em;
+}
+.cartItemQuantityCounter {
+  font-weight: bold;
+  text-align: center;
+}
+.cartItemQuantityButton {
+  cursor: pointer;
+  border: 0.1em black solid;
+  background-color: white;
+  color: black;
+}
+.cartItemQuantityButton:hover {
+  background-color: #f0f0f0;
+}

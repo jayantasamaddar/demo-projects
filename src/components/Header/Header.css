@@ -1,0 +1,27 @@
+header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+.header-nav {
+  box-shadow: 0px 10px 20px #ccc;
+  margin-bottom: 10px;
+}
+.header-ul {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-h2 {
+  font-family: monospace;
+  font-size: 2em;
+}
+.logout-btn {
+  background-color: #2f3c7e;
+  color: #fbeaeb;
+  margin: 0;
+}
+.logout-btn:hover {
+  background-color: #263166;
+}
