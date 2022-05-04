@@ -1,10 +1,21 @@
 import { useDispatch } from 'react-redux';
 import { authActions } from '../../store/auth-slice';
+import { auth } from '../../connections/firebase';
+import { signOut } from "firebase/auth";
+
 import Cart from '../Cart/Cart';
 import './Header.css';
 const Header = () => {
   const dispatch = useDispatch();
-  const logout = () => dispatch(authActions.logout());
+  
+  const logout = () => {
+    signOut(auth).then(() => {
+      dispatch(authActions.logout());
+    }).catch(({ code, message }) => {
+      console.log(`${code}: ${message}`);
+    });
+    
+  }
   return (
     <header>
       <nav className="header-nav">
